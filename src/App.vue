@@ -3,7 +3,6 @@
     <nav class="navbar navbar-expand navbar-dark" :style="{ background: gradientBackground }">
       <router-link to="/" class="navbar-brand">CRUD Vue</router-link>
       <div class="navbar-nav mr-auto">
-
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link to="/products" class="nav-link">Products</router-link>
