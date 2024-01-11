@@ -1,26 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <nav class="navbar navbar-expand navbar-dark" :style="{ background: gradientBackground }">
+      <a class="navbar-brand" href="#">
+        <img src="src/assets/logo.png" alt="" width="30" height="30">
+      </a>
+      <router-link to="/" class="navbar-brand">CRUD Vue</router-link>
+      <div class="navbar-nav mr-auto">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <router-link to="/products" class="nav-link">Products</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/add" class="nav-link">Add</router-link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container.fluid mt-3">
+      <router-view/>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: "app",
+  data() {
+    return {
+      gradientBackground: "linear-gradient(to right, #232526, #3c7a60)"
+    }
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
