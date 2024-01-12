@@ -4,6 +4,11 @@
 ```
 npm install
 ```
+```
+npm install vue-router@4
+npm install axios
+npm install bootstrap@4.6.0 jquery popper.js 
+```
 
 ### Compiles and hot-reloads for development
 ```
