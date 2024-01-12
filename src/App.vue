@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand navbar-dark" :style="{ background: gradientBackground }">
+      <a class="navbar-brand" href="#">
+        <img class="d-inline-block align-text-top" src="./assets/logo.png" alt="" width="30" height="30">
+      </a>
       <router-link to="/" class="navbar-brand">CRUD Vue</router-link>
       <div class="navbar-nav mr-auto">
         <ul class="navbar-nav">
