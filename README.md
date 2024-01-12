@@ -1,10 +1,8 @@
 # vuecrudv1.3
 
-## Project setup
+## Project setup + additional libraries
 ```
 npm install
-```
-```
 npm install vue-router@4
 npm install axios
 npm install bootstrap@4.6.0 jquery popper.js 
